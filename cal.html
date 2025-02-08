@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>calculator</h1> -->
+    <div id="calculator">
+        <div id="cal">
+      <div >
+        <input type="text" id="display" style="width: 86%;
+    border-radius: 10px; background-color: black; outline: none;">
+     </div>
+
+    <div>
+        <input type="button" value="Ac"  id="first" onclick="clr()">
+        <input type="button" value="%"   id="first" onclick="calcul('%')">
+        <input type="button" value="DE"  id="first" onclick="DE()">
+        <input type="button" value="/"   id="third" onclick="calcul('/')">
+    </div>
+
+    <div>
+        <input type="button" value="7" id="sec" onclick="calcul(7)">
+        <input type="button" value="8" id="sec" onclick="calcul(8)">
+        <input type="button" value="9" id="sec" onclick="calcul(9)">
+        <input type="button" value="*" id="third" onclick="calcul('*')">    
+    </div>
+
+    <div>
+        <input type="button" value="4" id="sec" onclick="calcul(4)">
+        <input type="button" value="5" id="sec" onclick="calcul(5)">
+        <input type="button" value="6" id="sec" onclick="calcul(6)">
+        <input type="button" value="-" id="third" onclick="calcul('-')">
+    </div>
+
+    <div>
+        <input type="button" value="1" id="sec" onclick="calcul(1)">
+        <input type="button" value="2" id="sec" onclick="calcul(2)">
+        <input type="button" value="3" id="sec" onclick="calcul(3)">
+        <input type="button" value="+" id="third" onclick="calcul('+')">
+    </div>
+
+    <div>
+        <input type="button" value="00" id="sec" onclick="calcul('00')">
+        <input type="button" value="0" id="sec" onclick="calcul(0)">
+        <input type="button" value="." id="sec" onclick="calcul('.')">
+        <input type="button" value="=" id="third" onclick="solve('=')">
+    </div>
+</div>
+    </div>
+
+   <script src="cal.js"></script>
+</body>
+</html>
