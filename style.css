@@ -42,10 +42,10 @@ body{
 
 @media screen and (max-width: 450px){
     #calculator{
-        width: 75%;
+        width: 60%;
     }
 
     #calculator input{
-        width: 21%;
+        width: 20%;
     }
 }
