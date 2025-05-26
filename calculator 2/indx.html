@@ -14,47 +14,49 @@
 
   <table border="1" cellpadding="10px" cellspacing="10px">
     <tr>
-        <th colspan="4"></th>
+        <th colspan="4" id="inp"></th>
     </tr>
 
     <tr>
-        <td>AC</td>
-        <td>%</td>
-        <td>DEL</td>
-        <td>/</td>
+        <td onclick="clr()">AC</td>
+        <td onclick="sendData('%')">%</td>
+        <td onclick="del()">DEL</td>
+        <td onclick="sendData('/')">/</td>
     </tr>
 
      <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>*</td>
+        <td onclick="sendData('7')">7</td>
+        <td onclick="sendData('8')">8</td>
+        <td onclick="sendData('9')">9</td>
+        <td onclick="sendData('*')">*</td>
     </tr>
 
      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>-</td>
+        <td onclick="sendData('4')">4</td>
+        <td onclick="sendData('5')">5</td>
+        <td onclick="sendData('6')">6</td>
+        <td onclick="sendData('-')">-</td>
     </tr>
 
      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>+</td>
+        <td onclick="sendData('1')">1</td>
+        <td onclick="sendData('2')">2</td>
+        <td onclick="sendData('3')">3</td>
+        <td onclick="sendData('+')">+</td>
     </tr>
 
      <tr>
-        <td>00</td>
-        <td>0</td>
-        <td>.</td>
-        <td>=</td>
+        <td onclick="sendData('00')">00</td>
+        <td onclick="sendData('0')">0</td>
+        <td onclick="sendData('.')">.</td>
+        <td onclick="solve()">=</td>
     </tr>
 
   </table>
 
 </main>
+
+<script src="first.js"></script>
 
 </body>
 </html>
